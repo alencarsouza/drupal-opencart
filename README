@@ -1,0 +1,11 @@
+:: Drupal with Opencart
+
+Getting started:
+	$	cd _db
+	$	sudo ./recreate-data.sh
+
+
+:: Links
+
+http://drupal.org/
+http://www.opencart.com/
