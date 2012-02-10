@@ -4,3 +4,4 @@
 
 web/store/system/cache/cache.*
 web/store/system/logs/error.*
+web/store/image/cache/data/*
