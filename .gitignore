@@ -1,0 +1,6 @@
+.buildpath
+.project
+.settings/
+
+web/store/system/cache/cache.*
+web/store/system/logs/error.*
