@@ -1,0 +1,60 @@
+<?php
+/*
+Atualização do pacote de idioma Português do Brasil (pt-br) Opencart 1.5.1.3
+Traduzido e adaptado por [tag4] Agência de Idéias Livres! - http://www.tag4.net
+
+Codificação: Unicode (UTF-8)
+Créditos  da versão v1.5.1.1: Manoel Vidal, Brunna e Jeann
+Comunidade opencartbrasil.com.br e surgimento.com.br
+
+Este arquivo faz parte de um software livre; você pode redistribui-lo e/ou 
+modifica-lo dentro dos termos da Licença Pública Geral GPL como
+publicada pela Fundação do Software Livre (FSF); na versão 3 da
+Licença.
+
+Este arquivo é distribuido na esperança que possa ser útil,
+mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUAÇÃO
+a qualquer MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a Licença 
+Pública Geral GNU para maiores detalhes.
+
+Você deve ter recebido uma cópia da Licença Pública Geral GPL junto 
+com este programa, se não, acesse <http://www.gnu.org/licenses/>
+*/
+
+// Heading
+$_['heading_title']		= 'Idiomas';  
+
+// Text
+$_['text_success']		= 'Idioma atualizado com sucesso!'; 
+
+// Column
+$_['column_name']		= 'Nome do idioma';
+$_['column_code']		= 'Código';
+$_['column_sort_order']	= 'Ordem';
+$_['column_action']		= 'Ação';
+
+// Entry
+$_['entry_name']		= 'Nome do idioma:';
+$_['entry_code']		= 'Código do idioma:<br /><span class="help">Não altere se este for o seu idioma padrão.</span>';
+$_['entry_locale']		= 'Localização:<br /><span class="help">Ex.: pt_BR.UTF-8, pt_BR, UTF-8</span>';
+$_['entry_image']		= 'Imagem:<br /><span class="help">Ex.: br.png</span>';
+$_['entry_directory']	= 'Pasta:<br /><span class="help">Especifique o diretório de linguagem (case-sensitive)</span>';
+$_['entry_filename']	= 'Nome do arquivo:<br /><span class="help">Nome do arquivo de linguagem principal sem a extensão</span>';
+$_['entry_status']		= 'Situação:<br /><span class="help">Habilitar / Desabilitar a linguagem</span>';
+$_['entry_sort_order']	= 'Ordem:';
+
+
+// Error
+$_['error_permission']	= 'Atenção: Você não possui permissão para modificar os idiomas!';
+$_['error_name']		= 'Nome do idioma deve ter entre 3 e 32 caracteres!';
+$_['error_code']		= 'Código do idioma deve possuir ao menos 2 caracteres!';
+$_['error_locale']		= 'O campo <em>localização</em> é obrigatório!';
+$_['error_image']		= 'Nome da imagem deve ter entre 3 e 64 caracteres!';
+$_['error_directory']	= 'O campo <em>Pasta</em> é obrigatório!';
+$_['error_filename']	= 'Nome do arquivo deve ter entre 3 a 64 caracteres!';
+$_['error_default']		= 'Atenção: Este idioma não pode ser excluído pois está atribuído ao idioma padrão da loja!';
+$_['error_admin']		= 'Atenção: Este idioma não pode ser excluído pois está atribuído ao idioma da administração!';
+$_['error_store']		= 'Atenção: Este idioma não pode ser excluído pois está atribuído a %s loja(s)!';
+$_['error_order']		= 'Atenção: Este idioma não pode ser excluído pois está atribuído a %s venda(s)!';
+
+?>

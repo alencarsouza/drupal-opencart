@@ -1,0 +1,41 @@
+<?php
+//==============================================================================
+// Latest, Featured, and Bestseller Pages v151.3
+// 
+// Author: Clear Thinking, LLC
+// E-mail: johnathan@getclearthinking.com
+// Website: http://www.getclearthinking.com
+//==============================================================================
+
+// Heading
+$_['heading_title']		 = 'Latest Products';
+
+// Text
+$_['text_stars']		= '%s out of 5 Stars!';
+$_['text_refine']		= 'Refine Search';
+$_['text_product']		= 'Products';
+$_['text_error']		= 'Products not found!';
+$_['text_empty']		= 'There are no products to list.';
+$_['text_quantity']		= 'Qty:';
+$_['text_manufacturer']	= 'Brand:';
+$_['text_model']		= 'Product Code:';
+$_['text_points']		= 'Reward Points:';
+$_['text_price']		= 'Price:';
+$_['text_tax']			= 'Ex Tax:';
+$_['text_reviews']		= 'Based on %s reviews.';
+$_['text_compare']		= 'Product Compare (%s)';
+$_['text_display']		= 'Display:';
+$_['text_list']			= 'List';
+$_['text_grid']			= 'Grid';
+$_['text_sort']			= 'Sort By:';
+$_['text_default']		= 'Latest';
+$_['text_name_ASC']		= 'Name (A - Z)';
+$_['text_name_DESC']	= 'Name (Z - A)';
+$_['text_price_ASC']	= 'Price (Low &gt; High)';
+$_['text_price_DESC']	= 'Price (High &gt; Low)';
+$_['text_rating_ASC']	= 'Rating (Lowest)';
+$_['text_rating_DESC']	= 'Rating (Highest)';
+$_['text_model_ASC']	= 'Model (A - Z)';
+$_['text_model_DESC']	= 'Model (Z - A)';
+$_['text_limit']		= 'Show:';
+?>
