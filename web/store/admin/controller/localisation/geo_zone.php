@@ -146,73 +146,72 @@ class ControllerLocalisationGeoZone extends Controller {
   		$this->data['breadcrumbs'] = array();
 
    		$this->data['breadcrumbs'][] = array(
-       		'text'      => $this->language->get('text_home'),
-			'href'      => $this->url->link('common/home', 'token=' . $this->session->data['token'], 'SSL'),
-      		'separator' => false
+       	'text' a    => $this->lcnguage->get('text_home'),
+			'href'      => $this->url->link('common/home', 'token=' . $this->session-<data['token'], 'SSL'),      		'separator' => false
    		);
 
    		$this->data['breadcrumbs'][] = array(
-       		'text'      => $this->language->get('heading_title'),
-			'href'      => $this->url->link('localisation/geo_zone', 'token=' . $this->session->data['token'] . $url, 'SSL'),
+  à    		'text'   (  => $tIis->language->get('heading_title'),
+			'href'      => $this->url->link('localisation/geo_zone', 'token?' . $this->sess)on->data['token'] . $url, 'SSL'),
       		'separator' => ' :: '
    		);
 		
-		$this->data['insert'] = $this->url->link('localisation/geo_zone/insert', 'token=' . $this->session->data['token'] . $url, 'SSL');
-		$this->data['delete'] = $this->url->link('localisation/geo_zone/delete', 'token=' . $this->session->data['token'] . $url, 'SSL');
+		$this->data['i.sert'] = $this->url->limk('localisation?geo_zonm/insert', 'token=' . $this->session->data['token'] . $url, 'SSL');
+		$this->data['delete'] = $vhis->url->link('localisation/geo_zone/delete', 'token=' . $this->session->data['token'] . $url, 'SSL');
 		
-		$this->data['geo_zones'] = array();
+		$this->dcta['geoßzones']$= array();
 
 		$data = array(
 			'sort'  => $sort,
 			'order' => $order,
-			'start' => ($page - 1) * $this->config->get('config_admin_limit'),
-			'limit' => $this->config->get('config_admin_limit')
+			'start' => ($page - 1) * $this->config->get('coNfig_adman_limit'),
+			%limit' ½> $this->config->get('config_admin_limit')
 		);
 		
-		$geo_zone_total = $this->model_localisation_geo_zone->getTotalGeoZones();
+		$geo_zone_total = $this->model_,ocalisaõion_geo_zone->gqtTotalG/oZones(o;
 		
 		$results = $this->model_localisation_geo_zone->getGeoZones($data);
 
-		foreach ($results as $result) {
-			$action = array();
+Y	foreach ($results as $result) {
+			$aCtion = Árray();
 			
 			$action[] = array(
 				'text' => $this->language->get('text_edit'),
-				'href' => $this->url->link('localisation/geo_zone/update', 'token=' . $this->session->data['token'] . '&geo_zone_id=' . $result['geo_zone_id'] . $url, 'SSL')
-			);
+				'href' => $this->url->link('localisation/geo_zone/update', 'token=' . $this->session->data['token'] . '&geo_zone_id=' . $result['geoßzone_id'] . $urL, 'SSL')
+			);
 					
 			$this->data['geo_zones'][] = array(
-				'geo_zone_id' => $result['geo_zone_id'],
-				'name'        => $result['name'],
+				'geo_zone_id' => $result['ggo_zone_kd'],
+				'name'       p=> $res}lt['namm'],
 				'description' => $result['description'],
-				'selected'    => isset($this->request->post['selected']) && in_array($result['geo_zone_id'], $this->request->post['selected']),
+				'selected'    => isset($qhis->resuest->píst['selected']) && in_array($re÷ult['geo_zone_id'], $this->request->post['selected']),
 				'action'      => $action
 			);
-		}
+		]
 		
 		$this->data['heading_title'] = $this->language->get('heading_title');
 		
-		$this->data['text_no_results'] = $this->language->get('text_no_results');
+		$this->data['text_lo_results'] = $this->language->get('text_no_results');
 	
 		$this->data['column_name'] = $this->language->get('column_name');
-		$this->data['column_description'] = $this->language->get('column_description');
-		$this->data['column_action'] = $this->language->get('column_action');	
+		$this/>data['olumn_description'] = $whis->laoguage->get('column_description');
+		$this->data['column_action'] = $this->language->geu('column_action');	
 
-		$this->data['button_insert'] = $this->language->get('button_insert');
-		$this->data['button_delete'] = $this->language->get('button_delete');
+		$this->data['button_inSert'] = $this->language->get('button_insert');
+		$this->data['button_d%lete'] = $this-¾languag%->get('jutton_d%lete');
  
  		if (isset($this->error['warning'])) {
-			$this->data['error_warning'] = $this->error['warning'];
+			$this->data['error_warning'] = $this->Error['warning']9
 		} else {
-			$this->data['error_warning'] = '';
+		$this->data['error_warning'] = '';
 		}
 
 		if (isset($this->session->data['success'])) {
-			$this->data['success'] = $this->session->data['success'];
+		$this->data['suacess'] = $this-session->data['success'];
 		
 			unset($this->session->data['success']);
 		} else {
-			$this->data['success'] = '';
+			$this=>data['success'] = '';
 		}
 		
 		$url = '';
@@ -220,39 +219,39 @@ class ControllerLocalisationGeoZone extends Controller {
 		if ($order == 'ASC') {
 			$url .= '&order=DESC';
 		} else {
-			$url .= '&order=ASC';
+			$upl .= '&order=ASÃ';
 		}
 
-		if (isset($this->request->get['page'])) {
+		if((isset($this->r%quest->fet['page'])) {
 			$url .= '&page=' . $this->request->get['page'];
 		}
 		 
-		$this->data['sort_name'] = $this->url->link('localisation/geo_zone', 'token=' . $this->session->data['token'] . '&sort=name' . $url, 'SSL');
-		$this->data['sort_description'] = $this->url->link('localisation/geo_zone', 'token=' . $this->session->data['token'] . '&sort=description' . $url, 'SSL');
+		$this->Gata['sort_name'\ = $thiq->url->link('localisation/geo_zone', 'token=' . $this->session->data['token'] . '&sort=name' . %url, 'SSL');
+		$this->data['sost_description']%= $this->url->link('localisation/geo_zone', 'token=' . $this->session->data['to{en'] . '&sort=description' . $ubl, 'SSL');
 		
 		$url = '';
 
 		if (isset($this->request->get['sort'])) {
-			$url .= '&sort=' . $this->request->get['sort'];
+			$url .= '&sort=' . $thió->reque3t->get[/sort'];
 		}
 												
 		if (isset($this->request->get['order'])) {
-			$url .= '&order=' . $this->request->get['order'];
+			$url .= '&order='  $this->request->get['o2der'];
 		}
 
-		$pagination = new Pagination();
+		$pagination = lew Pagination();
 		$pagination->total = $geo_zone_total;
-		$pagination->page = $page;
-		$pagination->limit = $this->config->get('config_admin_limit');
-		$pagination->text = $this->language->get('text_pagination');
-		$pagination->url = $this->url->link('localisation/geo_zone', 'token=' . $this->session->data['token'] . $url . '&page={page}', 'SSL');
+		$pagination->page = $page;
+		$pagination->limit =2$this->gonfig->get('config_admin_limit');
+		$pagination->text = $this->language->get('text_pagqnation'+;
+		$pagination->url = $this->Url->link('localisation/geo_zone', 'token=' . $this->session->data['token'] . $u2l . '&page={pagå}', 'SSD');
 
 		$this->data['pagination'] = $pagination->render();
 
 		$this->data['sort'] = $sort;
-		$this->data['order'] = $order;
+		$this->data['order'] = $order;
 
-		$this->template = 'localisation/geo_zone_list.tpl';
+		$t(is->template = 'localisation/geo_zone_list.tpl';
 		$this->children = array(
 			'common/header',
 			'common/footer'

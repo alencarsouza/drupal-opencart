@@ -1,12 +1,12 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://gonow.drupal/store/');
-define('HTTP_IMAGE', 'http://gonow.drupal/store/image/');
-define('HTTP_ADMIN', 'http://gonow.drupal/store/admin/');
+define('HTTP_SERVER', 'http://portal.ftd.com/store/');
+define('HTTP_IMAGE', 'http://portal.ftd.com/store/image/');
+define('HTTP_ADMIN', 'http://portal.ftd.com/store/admin/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://gonow.drupal/store/');
-define('HTTPS_IMAGE', 'http://gonow.drupal/store/image/');
+define('HTTPS_SERVER', 'http://portal.ftd.com/store/');
+define('HTTPS_IMAGE', 'http://portal.ftd.com/store/image/');
 
 // DIR
 define('DIR_APPLICATION', '/home/ajunior/Workspace/drupal/web/store/catalog/');
