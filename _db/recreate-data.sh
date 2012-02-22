@@ -16,4 +16,5 @@ flush privileges;"
 	mysql -u root -p $1 < $1-dump.sql
 }
 
-recreate ftd
+recreate ftd_drupal
+recreate ftd_opencart

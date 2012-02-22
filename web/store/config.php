@@ -25,6 +25,6 @@ define('DB_DRIVER', 'mysql');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'gonow');
 define('DB_PASSWORD', 'gonow@123');
-define('DB_DATABASE', 'ftd');
+define('DB_DATABASE', 'ftd_opencart');
 define('DB_PREFIX', 'oc_');
 ?>
